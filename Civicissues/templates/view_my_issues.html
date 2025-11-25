@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Issues</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 p-10">
+<div class="flash-container">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        {% for category, message in messages %}
+        <div class="flash-message {{ category }}">{{ message }}</div>
+        {% endfor %}
+    {% endif %}
+    {% endwith %}
+</div>
+<h1 class="text-3xl font-bold text-teal-700 mb-6">My Reported Issues</h1>
+
+<h1 class="text-3xl font-bold text-teal-700 mb-6">My Reported Issues</h1>
+
+{% if issues %}
+  <div class="space-y-4">
+  {% for issue in issues %}
+    <div class="bg-white p-4 rounded shadow">
+      <h2 class="font-bold text-teal-700">{{ issue.title }} ({{ issue.priority }})</h2>
+      <p>{{ issue.description }}</p>
+      {% if issue.photo %}
+        <img src="{{ url_for('static', filename=issue.photo) }}" alt="Issue Photo" class="w-32 h-32 object-cover rounded mt-2">
+      {% endif %}
+      <p class="italic text-gray-600">
+        Category: {{ issue.category }} | Status:
+        <span class="font-semibold
+          {% if issue.status == 'Resolved' %}text-green-600
+          {% elif issue.status == 'In Progress' %}text-blue-600
+          {% else %}text-red-600
+          {% endif %}
+        ">
+          {{ issue.status }}
+        </span>
+      </p>
+      <p class="text-gray-600">Pincode: {{ issue.pincode }} | Date: {{ issue.date }} | Time: {{ issue.time }} | Upvotes: {{ issue.upvotes }}</p>
+      {% if not issue.anonymous %}
+        <p class="text-gray-500">Reported by: {{ issue.username }}</p>
+      {% endif %}
+    </div>
+  {% endfor %}
+  </div>
+{% else %}
+  <p class="text-gray-600">You have not reported any issues yet.</p>
+{% endif %}
+
+<a href="{{ url_for('citizen_home') }}" class="mt-6 inline-block bg-teal-600 text-white px-4 py-2 rounded hover:bg-teal-700">Back to Dashboard</a>
+<style>
+    .flash-message {
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        font-weight: bold;
+        color: white;
+        opacity: 1;
+        transition: opacity 0.5s ease-in-out;
+    }
+    .success { background-color: #4CAF50; }
+    .error { background-color: #f44336; }
+    .warning { background-color: #ff9800; }
+    .hidden {
+        opacity: 0;
+        height: 0;
+        padding: 0;
+        margin: 0;
+        border: none;
+    }
+</style>
+</body>
+</html>

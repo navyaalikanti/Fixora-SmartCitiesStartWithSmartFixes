@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixora - Smart City Issue Tracker</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+  <div class="flash-container">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        {% for category, message in messages %}
+        <div class="flash-message {{ category }}">{{ message }}</div>
+        {% endfor %}
+    {% endif %}
+    {% endwith %}
+</div>
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between bg-teal-600 shadow-lg px-6 py-4 sticky top-0 z-50">
+    <div class="flex items-center space-x-3">
+      <!-- Logo as Div with Tick Mark -->
+      <div class="h-10 w-10 rounded-full bg-[#0d9488] flex items-center justify-center border-2 border-white">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+      <span class="text-white font-bold text-xl">Fixora</span>
+    </div>
+    <div class="space-x-4">
+      <a href="/create-account" class="text-white font-medium hover:text-gray-200">Create Account</a>
+      <a href="/login" class="text-white font-medium hover:text-gray-200">Login</a>
+      <a href="#" class="bg-white text-teal-600 px-4 py-2 rounded-lg font-semibold shadow hover:bg-gray-100 transition">Request Demo</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="text-center py-20 px-6 bg-gradient-to-r from-teal-50 to-teal-100">
+    <h1 class="text-5xl md:text-6xl font-extrabold text-teal-700 mb-6">Fixora - Smart Cities Start with Smart Fixes</h1>
+    <p class="text-gray-700 max-w-3xl mx-auto text-lg md:text-xl leading-relaxed mb-8">
+      Fixora is a smart civic issue reporting and prediction platform that connects citizens and government on a real-time heatmap. From potholes to streetlights, it turns complaints into proactive fixes for cleaner, safer cities.
+    </p>
+    <a href="#features" class="inline-block bg-teal-600 text-white px-8 py-3 rounded-lg font-semibold shadow-lg hover:bg-teal-700 transition">Get Started</a>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-20 px-6 bg-white">
+    <h2 class="text-4xl font-bold text-teal-700 text-center mb-12">Features & Benefits</h2>
+
+    <!-- Feature Cards -->
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+
+      <!-- Feature 1 -->
+      <div class="bg-teal-50 p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-2xl font-bold text-teal-700 mb-4">Dual Portals </h3>
+        <p class="text-gray-700">Citizens report, government tracks & resolves issues in real time for smarter city management.</p>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="bg-teal-50 p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-2xl font-bold text-teal-700 mb-4">Smart Heatmap </h3>
+        <p class="text-gray-700">Issues appear as red dots that grow with community upvotes, highlighting priority problems visually.</p>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="bg-teal-50 p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-2xl font-bold text-teal-700 mb-4">AI Predictions </h3>
+        <p class="text-gray-700">Anticipates potholes, garbage, and seasonal problems before they occur to enable proactive action.</p>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="bg-teal-50 p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-2xl font-bold text-teal-700 mb-4">Proactive Alerts </h3>
+        <p class="text-gray-700">Citizens & officials get early warnings validated by real users for faster, smarter responses.</p>
+      </div>
+
+      <!-- Feature 5 -->
+      <div class="bg-teal-50 p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-2xl font-bold text-teal-700 mb-4">Auto-Detection </h3>
+        <p class="text-gray-700">Sensors & GPS auto-spot potholes/hazards while citizens move, updating the heatmap in real-time.</p>
+      </div>
+
+      <!-- Feature 6 -->
+      <div class="bg-teal-50 p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-2xl font-bold text-teal-700 mb-4">Proof & Rewards </h3>
+        <p class="text-gray-700">Before-after photos plus gamified points encourage citizen participation and continuous engagement.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-teal-600 text-white py-6 mt-12 text-center">
+    <p>&copy; 2025 Fixora. All rights reserved.</p>
+  </footer>
+<style>
+    .flash-message {
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        font-weight: bold;
+        color: white;
+        opacity: 1;
+        transition: opacity 0.5s ease-in-out;
+    }
+    .success { background-color: #4CAF50; }
+    .error { background-color: #f44336; }
+    .warning { background-color: #ff9800; }
+    .hidden {
+        opacity: 0;
+        height: 0;
+        padding: 0;
+        margin: 0;
+        border: none;
+    }
+</style>
+</body>
+</html>

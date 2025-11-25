@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 h-screen flex items-center justify-center">
+  <div class="flash-container">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        {% for category, message in messages %}
+        <div class="flash-message {{ category }}">{{ message }}</div>
+        {% endfor %}
+    {% endif %}
+    {% endwith %}
+</div>
+  <div class="w-3/4 h-3/4 bg-white shadow-lg rounded-xl grid grid-cols-2">
+    
+    <!-- Left Side (User Login Option) -->
+    <div class="flex flex-col items-center justify-center bg-teal-50 rounded-l-xl p-6">
+      <h2 class="text-3xl font-extrabold text-teal-700 mb-4">User Login</h2>
+      <p class="text-lg md:text-xl mb-6 text-center text-gray-600">Access your account to report and track civic issues.</p>
+      <a href="{{ url_for('user_login') }}" 
+         class="bg-teal-600 text-white px-8 py-3 rounded-lg hover:bg-teal-700 text-lg font-semibold">
+         Login as User
+      </a>
+    </div>
+
+    <!-- Right Side (Official Login Option) -->
+    <div class="flex flex-col items-center justify-center bg-teal-100 rounded-r-xl p-6">
+      <h2 class="text-3xl font-extrabold text-teal-800 mb-4">Official Login</h2>
+      <p class="text-lg md:text-xl mb-6 text-center text-gray-700">Login to manage, assign and resolve issues efficiently.</p>
+      <a href="{{ url_for('govt_login') }}" 
+         class="bg-teal-700 text-white px-8 py-3 rounded-lg hover:bg-teal-800 text-lg font-semibold">
+         Login as Official
+      </a>
+    </div>
+
+  </div>
+<style>
+    .flash-message {
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        font-weight: bold;
+        color: white;
+        opacity: 1;
+        transition: opacity 0.5s ease-in-out;
+    }
+    .success { background-color: #4CAF50; }
+    .error { background-color: #f44336; }
+    .warning { background-color: #ff9800; }
+    .hidden {
+        opacity: 0;
+        height: 0;
+        padding: 0;
+        margin: 0;
+        border: none;
+    }
+</style>
+</body>
+</html>

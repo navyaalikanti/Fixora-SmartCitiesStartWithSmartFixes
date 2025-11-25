@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Official Dashboard - Fixora</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+    <style>
+        /* Base sidebar styles */
+        .sidebar {
+            width: 260px; /* Default width for the expanded sidebar */
+            transition: width 0.3s ease-in-out;
+            overflow-x: hidden;
+            flex-shrink: 0;
+        }
+        /* Collapsed sidebar styles */
+        .sidebar.collapsed {
+            width: 80px; /* Width for the collapsed sidebar */
+        }
+        /* Styles for the navigation items */
+        .sidebar-item .text-content {
+            white-space: nowrap;
+            opacity: 1;
+            transition: opacity 0.3s ease-in-out;
+        }
+        /* Hide text when sidebar is collapsed */
+        .sidebar.collapsed .sidebar-item .text-content {
+            opacity: 0;
+            width: 0; /* Ensures the text doesn't take up space */
+        }
+        /* Increased icon size and spacing for better visibility */
+        .sidebar-item .fa-solid {
+            font-size: 1.5rem; /* Larger font size for icons */
+            margin-right: 1rem;
+            transition: margin-right 0.3s ease-in-out;
+        }
+        /* Remove right margin on icons when sidebar is collapsed */
+        .sidebar.collapsed .sidebar-item .fa-solid {
+            margin-right: 0;
+        }
+        /* Main content area to shift when the sidebar collapses */
+        .main-content {
+            margin-left: 260px;
+            transition: margin-left 0.3s ease-in-out;
+            width: 100%; /* Ensures it fills the remaining space */
+        }
+        .main-content.collapsed {
+            margin-left: 80px;
+        }
+        #map {
+            height: 400px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 flex min-h-screen">
+    <div class="flash-container">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+            <div class="flash-message {{ category }}">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
+        {% endwith %}
+    </div>
+    <aside id="sidebar" class="sidebar bg-teal-600 text-white p-4 fixed h-full z-50 flex flex-col justify-between">
+        <div>
+            <nav class="flex flex-col space-y-4 text-sm pt-4">
+                <button id="sidebar-toggle" class="sidebar-item p-2 rounded-lg hover:bg-teal-800 focus:outline-none flex items-center">
+                    <i class="fas fa-bars fa-lg text-white"></i>
+                    <span class="text-content ml-2">Dashboard</span>
+                </button>
+                <a href="#" onclick="showSection('dashboard')" class="sidebar-item p-2 rounded-lg hover:bg-teal-800 flex items-center">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span class="text-content ml-2">Heat Map</span>
+                </a>
+                <a href="#" onclick="showSection('all-issues')" class="sidebar-item p-2 rounded-lg hover:bg-teal-800 flex items-center">
+                    <i class="fa-solid fa-list-check"></i>
+                    <span class="text-content ml-2">View Issues</span>
+                </a>
+                <a href="#" onclick="showSection('ai-predictions')" class="sidebar-item p-2 rounded-lg hover:bg-teal-800 flex items-center">
+                    <i class="fa-solid fa-robot"></i>
+                    <span class="text-content ml-2">AI Predictions</span>
+                </a>
+            </nav>
+        </div>
+        <a href="{{ url_for('logout') }}" class="sidebar-item p-2 rounded-lg hover:bg-teal-700 flex items-center mb-4">
+            <i class="fa-solid fa-sign-out-alt"></i>
+            <span class="text-content">Logout</span>
+        </a>
+    </aside>
+
+    <main id="main-content" class="main-content flex-grow p-8 bg-gradient-to-r from-teal-50 to-teal-100">
+        <header class="flex justify-between items-center mb-6">
+            <h1 class="text-3xl font-bold text-teal-800">Hello, {{ user.name }}!</h1>
+        </header>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <div class="mb-4">
+                    {% for category, message in messages %}
+                        <div class="p-4 rounded-md {{ 'bg-green-100 text-green-700' if category == 'success' else 'bg-red-100 text-red-700' }}">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+
+        <section id="dashboard" class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Dashboard Overview</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-teal-500">
+                    <div class="text-sm text-gray-500">Total Issues</div>
+                    <div class="text-3xl font-extrabold text-teal-600">{{ total_issues }}</div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-teal-500">
+                    <div class="text-sm text-gray-500">High Priority Issues</div>
+                    <div class="text-3xl font-extrabold text-teal-600">{{ high_priority_issues }}</div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-teal-500">
+                    <div class="text-sm text-gray-500">High-Risk Areas (AI)</div>
+                    <div class="text-xl font-extrabold text-teal-600">
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="text-xl font-bold text-gray-800 mb-4">Reported Issues Map</h3>
+            <div id="map" class="rounded-xl shadow-lg"></div>
+        </section>
+
+        <section id="all-issues" class="mt-10 bg-white p-8 rounded-xl shadow-lg hidden">
+            <h2 class="text-2xl font-bold mb-4">All Reported Issues</h2>
+
+            <!-- Category Filter -->
+            <form method="GET" action="{{ url_for('official_home') }}" class="mb-4 flex items-center space-x-4">
+                <label for="category" class="text-sm font-medium text-gray-700">Filter by Category:</label>
+                <select name="category" id="category" class="border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500">
+                    <option value="">All Categories</option>
+                    <option value="Drainage" {% if selected_category == "Drainage" %}selected{% endif %}>Drainage</option>
+                    <option value="Garbage / Waste" {% if selected_category == "Garbage / Waste" %}selected{% endif %}>Garbage / Waste</option>
+                    <option value="Potholes" {% if selected_category == "Potholes" %}selected{% endif %}>Potholes</option>
+                </select>
+                <button type="submit" class="bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-md text-sm">Filter</button>
+            </form>
+
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Title</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Description</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Pincode</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Category</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Priority</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Photo</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        {% for issue in all_issues %}
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap">{{ issue.title }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap">{{ issue.description }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap">{{ issue.pincode }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap">{{ issue.category }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap">{{ issue.priority }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full 
+                                    {% if issue.status == 'Resolved' %} bg-green-100 text-green-800
+                                    {% elif issue.status == 'In Progress' %} bg-yellow-100 text-yellow-800
+                                    {% else %} bg-red-100 text-red-800 {% endif %}">
+                                    {{ issue.status }}
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                {% if issue.photo %}
+                                <img src="{{ url_for('static', filename=issue.photo.split('static/')[-1]) }}" alt="Issue photo" class="w-16 h-16 object-cover rounded" />
+                                {% else %}
+                                No Photo
+                                {% endif %}
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                <form action="{{ url_for('update_issue_status') }}" method="post" class="inline-block">
+                                    <input type="hidden" name="issue_title" value="{{ issue.title }}" />
+                                    <input type="hidden" name="issue_pincode" value="{{ issue.pincode }}" />
+                                    <input type="hidden" name="issue_username" value="{{ issue.username }}" />
+                                    <select name="status" class="border rounded px-2 py-1 text-xs">
+                                        <option value="Pending" {% if issue.status == "Pending" %}selected{% endif %}>Pending</option>
+                                        <option value="In Progress" {% if issue.status == "In Progress" %}selected{% endif %}>In Progress</option>
+                                        <option value="Resolved" {% if issue.status == "Resolved" %}selected{% endif %}>Resolved</option>
+                                    </select>
+                                    <button type="submit" class="bg-teal-500 hover:bg-teal-600 text-white px-2 py-1 rounded text-xs ml-1">Update</button>
+                                </form>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="ai-predictions" class="mt-10 bg-white p-8 rounded-xl shadow-lg hidden">
+            <h2 class="text-2xl font-bold mb-4">AI Predictions</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Pincode</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Predicted Issue</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Expected Date</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Priority</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Description</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Upvotes</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        {% for prediction in ai_predictions %}
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap">{{ prediction.pincode }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap">{{ prediction.predicted_issue }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap">{{ prediction.expected_date }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap">{{ prediction.priority }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap">{{ prediction.description }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap">{{ prediction.upvotes }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <script>
+        // Sidebar Toggle Script
+        const sidebar = document.getElementById('sidebar');
+        const mainContent = document.getElementById('main-content');
+        const sidebarToggle = document.getElementById('sidebar-toggle');
+        sidebarToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('collapsed');
+            mainContent.classList.toggle('collapsed');
+        });
+        // The showSection function
+        function showSection(sectionId) {
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.add('hidden');
+            });
+            document.getElementById(sectionId).classList.remove('hidden');
+            if (sectionId === 'dashboard') {
+                setTimeout(initMap, 50); // Delay to ensure map div is visible
+            }
+        }
+        // The map initialization script
+        let mapInstance = null;
+        function initMap() {
+            if (mapInstance) {
+                mapInstance.remove();
+            }
+            mapInstance = L.map('map').setView([17.385044, 78.486671], 12);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+            }).addTo(mapInstance);
+            const issueMarkers = JSON.parse('{{ issue_markers | tojson | safe }}');
+            // Define a custom red icon
+            const redIcon = new L.Icon({
+                iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+                shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+                iconSize: [25, 41],
+                iconAnchor: [12, 41],
+                popupAnchor: [1, -34],
+                shadowSize: [41, 41]
+            });
+            issueMarkers.forEach(issue => {
+                const popupContent = `
+                    <div style="font-family: Arial, sans-serif; max-width: 250px;">
+                        <h3 style="margin: 0 0 5px 0; font-size: 16px; font-weight: bold; color: #2c3e50;">${issue.title}</h3>
+                        <p style="margin: 0 0 5px 0; font-size: 14px; color: #34495e;">${issue.description}</p>
+                        <p style="margin: 0 0 5px 0; font-size: 13px; color: #7f8c8d;">
+                            <strong>Category:</strong> ${issue.category}<br>
+                            <strong>Priority:</strong> ${issue.priority}<br>
+                            <strong>Status:</strong> ${issue.status}<br>
+                            <strong>Reported by:</strong> ${issue.username}<br>
+                            <strong>Pincode:</strong> ${issue.pincode}<br>
+                            <strong>Date:</strong> ${issue.date} ${issue.time}<br>
+                            <strong>Upvotes:</strong> ${issue.upvotes}
+                        </p>
+                        ${issue.photo ? `<img src="/${issue.photo}" alt="Issue photo" style="width: 100%; max-width: 200px; height: auto; margin-top: 10px; border-radius: 5px; box-shadow: 0 2px 6px rgba(0,0,0,0.3);">` : ''}
+                    </div>
+                `;
+                const marker = L.marker([issue.lat, issue.lng], { icon: redIcon }).addTo(mapInstance);
+                marker.bindPopup(popupContent);
+            });
+        }
+        // Initialize dashboard section on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            showSection('dashboard');
+        });
+    </script>
+    <style>
+        .flash-message {
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            color: white;
+            opacity: 1;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .success {
+            background-color: #4CAF50;
+        }
+        .error {
+            background-color: #f44336;
+        }
+        .warning {
+            background-color: #ff9800;
+        }
+        .hidden {
+            opacity: 0;
+            height: 0;
+            padding: 0;
+            margin: 0;
+            border: none;
+        }
+    </style>
+</body>
+</html>

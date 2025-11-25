@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Upvote Issues</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-teal-50 text-teal-700 min-h-screen">
+
+    <!-- Flash Messages -->
+    <div class="flash-container">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+            <div class="flash-message {{ category }}">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
+        {% endwith %}
+    </div>
+
+    <div class="max-w-3xl mx-auto p-6 mt-10 bg-white rounded-xl shadow-lg">
+        <h1 class="text-3xl font-bold mb-6">Upvote Civic Issues</h1>
+
+        <!-- Filter Form -->
+        <form method="POST" class="mb-6 flex gap-2">
+            <input type="text" name="pincode" placeholder="Enter Pincode to filter" required
+                   class="flex-grow p-2 border rounded" />
+            <button type="submit" class="bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded">Search</button>
+        </form>
+
+        {% if issues_to_display %}
+        <ul class="space-y-6">
+            {% for issue in issues_to_display %}
+            <li class="border p-4 rounded shadow hover:shadow-lg transition">
+                <h2 class="text-xl font-bold">{{ issue.title }}</h2>
+                <p>{{ issue.description }}</p>
+                <p class="text-gray-700">Pincode: {{ issue.pincode }}</p>
+                <p>Upvotes: {{ issue.upvotes }}</p>
+
+                <form action="{{ url_for('increment_upvote') }}" method="POST" class="mt-2">
+                    <input type="hidden" name="issue_title" value="{{ issue.title }}">
+                    <input type="hidden" name="issue_pincode" value="{{ issue.pincode }}">
+                    <input type="hidden" name="issue_username" value="{{ issue.username }}">
+                    <button type="submit" class="bg-teal-600 hover:bg-teal-700 text-white px-3 py-1 rounded">
+                        Upvote Issue
+                    </button>
+                </form>
+            </li>
+            {% endfor %}
+        </ul>
+        {% elif request.method == "POST" %}
+        <p class="mt-4 text-red-600">❌ No issues found for that pincode.</p>
+        {% endif %}
+    </div>
+
+    <style>
+        .flash-message {
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            color: white;
+            opacity: 1;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .success { background-color: #4CAF50; }
+        .error { background-color: #f44336; }
+        .warning { background-color: #ff9800; }
+        .hidden {
+            opacity: 0;
+            height: 0;
+            padding: 0;
+            margin: 0;
+            border: none;
+        }
+    </style>
+
+</body>
+</html>

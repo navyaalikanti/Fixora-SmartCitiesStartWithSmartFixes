@@ -1,0 +1,117 @@
+[
+    {
+        "email": "rishika@gmail.com",
+        "username": "rishika",
+        "password": "rishika@123",
+        "pincode": "500003",
+        "upvoted_issues": [
+            "garbage__500045__Navya"
+        ],
+        "upvoted_ai_predictions": [
+            "Drainage / Blockage__500003__2025-09-19"
+        ]
+    },
+    {
+        "email": "lasya@gmail.com",
+        "username": "lasya",
+        "password": "lasya@123",
+        "pincode": "500046",
+        "upvoted_issues": []
+    },
+    {
+        "email": "neshmitha@gmail.com",
+        "username": "neshmitha",
+        "password": "neshmitha@123",
+        "pincode": "500081",
+        "upvoted_issues": []
+    },
+    {
+        "email": "tejaswi@gmail.com",
+        "username": "tejaswi",
+        "password": "tejaswi@123",
+        "pincode": "500077",
+        "upvoted_issues": []
+    },
+    {
+        "email": "sushmitha@gmail.com",
+        "username": "sushmitha",
+        "password": "sushmitha@123",
+        "pincode": "500079",
+        "upvoted_issues": []
+    },
+    {
+        "email": "bhargavi@gmail.com",
+        "username": "bhargavi",
+        "password": "bhargavi@123",
+        "pincode": "500078",
+        "upvoted_issues": []
+    },
+    {
+        "email": "nivya@gmail.com",
+        "username": "nivya",
+        "password": "1234",
+        "pincode": "500045",
+        "upvoted_issues": []
+    },
+    {
+        "email": "anitha@gmail.com",
+        "username": "anitha",
+        "password": "1234",
+        "pincode": "500045",
+        "upvoted_issues": []
+    },
+    {
+        "email": "navya@gmail.com",
+        "username": "Navya",
+        "password": "navya@123",
+        "pincode": "500045",
+        "upvoted_issues": [
+            "garbage__500045__Navya",
+            "garbage__500081__Navya",
+            "Drainage probem__500047__Navya",
+            "garbage issue__500045__Navya"
+        ]
+    },
+    {
+        "email": "teju@gmail.com",
+        "username": "teju",
+        "password": "teju@123",
+        "pincode": "500003",
+        "upvoted_issues": []
+    },
+    {
+        "email": "priya@gmail.com",
+        "username": "Priya",
+        "password": "priya@123",
+        "pincode": "500063",
+        "upvoted_issues": []
+    },
+    {
+        "email": "ram@gamil.com",
+        "username": "Ram",
+        "password": "ram@123",
+        "pincode": "500003",
+        "upvoted_issues": []
+    },
+    {
+        "email": "rama@gamil.com",
+        "username": "Rama",
+        "password": "rama@123",
+        "pincode": "500081",
+        "upvoted_issues": []
+    },
+    {
+        "email": "nivya@gamil.com",
+        "username": "Nivya",
+        "password": "nivya@123",
+        "pincode": "500003",
+        "upvoted_issues": []
+    },
+    {
+        "email": "narender@gamil.com",
+        "username": "nar",
+        "password": "nar@123",
+        "pincode": "500072",
+        "upvoted_issues": []
+    }
+]

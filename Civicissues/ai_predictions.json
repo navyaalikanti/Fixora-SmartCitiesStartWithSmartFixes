@@ -1,0 +1,122 @@
+[
+    {
+        "pincode": "500003",
+        "predicted_issue": "Drainage / Blockage",
+        "expected_date": "2025-09-21",
+        "description": "Drainage / Blockage may occur due to past trends.",
+        "priority": "Low",
+        "upvotes": 0
+    },
+    {
+        "pincode": "500003",
+        "predicted_issue": "Electricity / Power Cut",
+        "expected_date": "2025-09-22",
+        "description": "Electricity may be disrupted in this area, especially during rainy/maintenance periods.",
+        "priority": "High",
+        "upvotes": 0
+    },
+    {
+        "pincode": "500003",
+        "predicted_issue": "Water / Leakage",
+        "expected_date": "2025-09-23",
+        "description": "Water supply may face leakages or interruptions due to aging pipelines or seasonal effects.",
+        "priority": "Medium",
+        "upvotes": 0
+    },
+    {
+        "pincode": "500045",
+        "predicted_issue": "Water / Leakage",
+        "expected_date": "2025-09-21",
+        "description": "Water supply may face leakages or interruptions due to aging pipelines or seasonal effects.",
+        "priority": "Medium",
+        "upvotes": 0
+    },
+    {
+        "pincode": "500045",
+        "predicted_issue": "Electricity / Power Cut",
+        "expected_date": "2025-09-22",
+        "description": "Electricity may be disrupted in this area, especially during rainy/maintenance periods.",
+        "priority": "Low",
+        "upvotes": 0
+    },
+    {
+        "pincode": "500045",
+        "predicted_issue": "Streetlight / Broken",
+        "expected_date": "2025-09-23",
+        "description": "Streetlights may fail; maintenance might be needed.",
+        "priority": "High",
+        "upvotes": 0
+    },
+    {
+        "pincode": "500072",
+        "predicted_issue": "Electricity / Power Cut",
+        "expected_date": "2025-09-21",
+        "description": "Electricity may be disrupted in this area, especially during rainy/maintenance periods.",
+        "priority": "Medium",
+        "upvotes": 0
+    },
+    {
+        "pincode": "500072",
+        "predicted_issue": "Traffic / Congestion",
+        "expected_date": "2025-09-22",
+        "description": "Traffic / Congestion may occur due to past trends.",
+        "priority": "High",
+        "upvotes": 0
+    },
+    {
+        "pincode": "500072",
+        "predicted_issue": "Public Facility / Park",
+        "expected_date": "2025-09-23",
+        "description": "Public facility issues or park wear-and-tear may be reported.",
+        "priority": "Low",
+        "upvotes": 0
+    },
+    {
+        "pincode": "500081",
+        "predicted_issue": "Electricity / Power Cut",
+        "expected_date": "2025-09-21",
+        "description": "Electricity may be disrupted in this area, especially during rainy/maintenance periods.",
+        "priority": "Medium",
+        "upvotes": 0
+    },
+    {
+        "pincode": "500081",
+        "predicted_issue": "Electricity / Power Cut",
+        "expected_date": "2025-09-22",
+        "description": "Electricity may be disrupted in this area, especially during rainy/maintenance periods.",
+        "priority": "Medium",
+        "upvotes": 0
+    },
+    {
+        "pincode": "500081",
+        "predicted_issue": "Public Facility / Park",
+        "expected_date": "2025-09-23",
+        "description": "Public facility issues or park wear-and-tear may be reported.",
+        "priority": "Low",
+        "upvotes": 0
+    },
+    {
+        "pincode": "500085",
+        "predicted_issue": "Electricity / Power Cut",
+        "expected_date": "2025-09-21",
+        "description": "Electricity may be disrupted in this area, especially during rainy/maintenance periods.",
+        "priority": "Medium",
+        "upvotes": 0
+    },
+    {
+        "pincode": "500085",
+        "predicted_issue": "Streetlight / Broken",
+        "expected_date": "2025-09-22",
+        "description": "Streetlights may fail; maintenance might be needed.",
+        "priority": "Low",
+        "upvotes": 0
+    },
+    {
+        "pincode": "500085",
+        "predicted_issue": "Public Facility / Park",
+        "expected_date": "2025-09-23",
+        "description": "Public facility issues or park wear-and-tear may be reported.",
+        "priority": "Medium",
+        "upvotes": 0
+    }
+]

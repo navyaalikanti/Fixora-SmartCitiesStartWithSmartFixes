@@ -1,0 +1,141 @@
+{
+    "Navya_issues": [
+        {
+            "title": "Drainage probem",
+            "description": "flowing from 10 days",
+            "pincode": "500047",
+            "location": {
+                "lat": "17.44173289724295",
+                "lng": "78.41981310316932"
+            },
+            "category": "Drainage",
+            "priority": "Medium",
+            "photo": "static/uploads/drainage.jpg",
+            "anonymous": true,
+            "upvotes": 2,
+            "date": "2025-09-17",
+            "time": "22:17:56",
+            "month": "September",
+            "username": "Navya",
+            "status": "In Progress"
+        },
+        {
+            "title": "garbage",
+            "description": "in the entire street",
+            "pincode": "500045",
+            "location": {
+                "lat": "17.441200647947543",
+                "lng": "78.42011356319071"
+            },
+            "category": "Garbage / Waste",
+            "priority": "Medium",
+            "photo": "static/uploads/garbage.jpeg",
+            "anonymous": true,
+            "upvotes": 2,
+            "date": "2025-09-17",
+            "time": "22:47:08",
+            "month": "September",
+            "username": "Navya",
+            "status": "Resolved"
+        },
+        {
+            "title": "garbage",
+            "description": "in the strretes fron 10 days",
+            "pincode": "500036",
+            "location": {
+                "lat": "17.44156912839443",
+                "lng": "78.42007125062213"
+            },
+            "category": "Garbage / Waste",
+            "priority": "Medium",
+            "photo": "static/uploads/garbagephoto.jpeg",
+            "anonymous": true,
+            "upvotes": 0,
+            "date": "2025-09-18",
+            "time": "05:18:35",
+            "month": "September",
+            "username": "Navya",
+            "status": "Pending"
+        },
+        {
+            "title": "garbage",
+            "description": "getting bad smell",
+            "pincode": "500081",
+            "location": {
+                "lat": "17.51231992616965",
+                "lng": "78.52631468656352"
+            },
+            "category": "Garbage / Waste",
+            "priority": "Medium",
+            "photo": "static/uploads/garbageeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.jpeg",
+            "anonymous": true,
+            "upvotes": 1,
+            "date": "2025-09-18",
+            "time": "06:39:40",
+            "month": "September",
+            "username": "Navya",
+            "status": "Pending"
+        },
+        {
+            "title": "garbage issue",
+            "description": "as it is festive season garbage is in the entire strret",
+            "pincode": "500045",
+            "location": {
+                "lat": "17.49581767819875",
+                "lng": "78.59926560323902"
+            },
+            "category": "Garbage / Waste",
+            "priority": "Medium",
+            "photo": "static/uploads/garbagephoto.jpeg",
+            "anonymous": true,
+            "upvotes": 1,
+            "date": "2025-09-19",
+            "time": "21:37:18",
+            "month": "September",
+            "username": "Navya",
+            "status": "Pending"
+        }
+    ],
+    "rishika_issues": [
+        {
+            "title": "pothholes ",
+            "description": "are everywhere in strrets after yesterday rain",
+            "pincode": "500049",
+            "location": {
+                "lat": "17.251514932217578",
+                "lng": "78.45370310281744"
+            },
+            "category": "Potholes",
+            "priority": "High",
+            "photo": "static/uploads/poth.jpeg",
+            "anonymous": true,
+            "upvotes": 0,
+            "date": "2025-09-19",
+            "time": "20:59:46",
+            "month": "September",
+            "username": "rishika",
+            "status": "Pending"
+        }
+    ],
+    "neshmitha_issues": [
+        {
+            "title": "drainage",
+            "description": "flowing due to rainy season",
+            "pincode": "500045",
+            "location": {
+                "lat": "17.44136441712697",
+                "lng": "78.42054339569763"
+            },
+            "category": "Drainage",
+            "priority": "High",
+            "photo": "static/uploads/drai.jpeg",
+            "anonymous": true,
+            "upvotes": 0,
+            "date": "2025-10-03",
+            "time": "22:13:41",
+            "month": "October",
+            "username": "neshmitha",
+            "status": "Pending"
+        }
+    ]
+}

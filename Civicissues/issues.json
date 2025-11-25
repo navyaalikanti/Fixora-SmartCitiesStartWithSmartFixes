@@ -1,0 +1,1899 @@
+{
+    "neshmitha_issues": [
+        {
+            "title": "Broken Issue",
+            "description": "Broken Issue reported in the area.",
+            "pincode": "500045",
+            "location": {
+                "lat": "17.440081",
+                "lng": "78.348915"
+            },
+            "category": "Streetlight / Broken",
+            "priority": "High",
+            "photo": "static/uploads/streetlight.jpeg",
+            "anonymous": false,
+            "upvotes": 5,
+            "date": "2025-07-23",
+            "time": "18:31:40",
+            "month": "July",
+            "username": "neshmitha",
+            "status": "Resolved"
+        },
+        {
+            "title": "Power Cut Issue",
+            "description": "Power Cut Issue reported in the area.",
+            "pincode": "500081",
+            "location": {
+                "lat": "17.450401",
+                "lng": "78.380571"
+            },
+            "category": "Electricity / Power Cut",
+            "priority": "Medium",
+            "photo": "static/uploads/powercut.jpeg",
+            "anonymous": false,
+            "upvotes": 16,
+            "date": "2023-10-02",
+            "time": "15:32:08",
+            "month": "October",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Broken Issue",
+            "description": "Broken Issue reported in the area.",
+            "pincode": "500081",
+            "location": {
+                "lat": "17.450401",
+                "lng": "78.380571"
+            },
+            "category": "Streetlight / Broken",
+            "priority": "High",
+            "photo": "static/uploads/streetlight2.jpeg",
+            "anonymous": false,
+            "upvotes": 21,
+            "date": "2025-01-24",
+            "time": "14:29:57",
+            "month": "January",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Congestion Issue",
+            "description": "Congestion Issue reported in the area.",
+            "pincode": "500072",
+            "location": {
+                "lat": "17.484348",
+                "lng": "78.400132"
+            },
+            "category": "Traffic / Congestion",
+            "priority": "Medium",
+            "photo": "static/uploads/traffic.jpeg",
+            "anonymous": false,
+            "upvotes": 6,
+            "date": "2023-09-04",
+            "time": "07:06:11",
+            "month": "September",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Overflow Issue",
+            "description": "Overflow Issue reported in the area.",
+            "pincode": "500081",
+            "location": {
+                "lat": "17.450401",
+                "lng": "78.380571"
+            },
+            "category": "Garbage / Overflow",
+            "priority": "High",
+            "photo": "static/uploads/garbage.jpeg",
+            "anonymous": false,
+            "upvotes": 1,
+            "date": "2025-02-22",
+            "time": "08:19:51",
+            "month": "February",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Leakage Issue",
+            "description": "Leakage Issue reported in the area.",
+            "pincode": "500081",
+            "location": {
+                "lat": "17.450401",
+                "lng": "78.380571"
+            },
+            "category": "Water / Leakage",
+            "priority": "Medium",
+            "photo": "static/uploads/waterleakage.jpeg",
+            "anonymous": false,
+            "upvotes": 39,
+            "date": "2024-07-29",
+            "time": "01:33:43",
+            "month": "July",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Potholes Issue",
+            "description": "Potholes Issue reported in the area.",
+            "pincode": "500003",
+            "location": {
+                "lat": "17.435353",
+                "lng": "78.471872"
+            },
+            "category": "Road / Potholes",
+            "priority": "High",
+            "photo": "static/uploads/potholes.jpeg",
+            "anonymous": false,
+            "upvotes": 32,
+            "date": "2023-09-03",
+            "time": "09:51:41",
+            "month": "September",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Broken Issue",
+            "description": "Broken Issue reported in the area.",
+            "pincode": "500085",
+            "location": {
+                "lat": "17.312924",
+                "lng": "78.394186"
+            },
+            "category": "Streetlight / Broken",
+            "priority": "Low",
+            "photo": "static/uploads/broken_issue43.jpeg",
+            "anonymous": false,
+            "upvotes": 12,
+            "date": "2023-10-27",
+            "time": "02:23:55",
+            "month": "October",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Overflow Issue",
+            "description": "Overflow Issue reported in the area.",
+            "pincode": "500003",
+            "location": {
+                "lat": "17.435353",
+                "lng": "78.471872"
+            },
+            "category": "Garbage / Overflow",
+            "priority": "Low",
+            "photo": "static/uploads/overflow_issue45.jpeg",
+            "anonymous": false,
+            "upvotes": 41,
+            "date": "2023-09-03",
+            "time": "11:15:03",
+            "month": "September",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Congestion Issue",
+            "description": "Congestion Issue reported in the area.",
+            "pincode": "500085",
+            "location": {
+                "lat": "17.312924",
+                "lng": "78.394186"
+            },
+            "category": "Traffic / Congestion",
+            "priority": "Medium",
+            "photo": "static/uploads/congestion_issue50.jpeg",
+            "anonymous": false,
+            "upvotes": 31,
+            "date": "2024-04-06",
+            "time": "10:20:22",
+            "month": "April",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Leakage Issue",
+            "description": "Leakage Issue reported in the area.",
+            "pincode": "500003",
+            "location": {
+                "lat": "17.435353",
+                "lng": "78.471872"
+            },
+            "category": "Water / Leakage",
+            "priority": "High",
+            "photo": "static/uploads/leakage_issue53.jpeg",
+            "anonymous": false,
+            "upvotes": 49,
+            "date": "2023-09-20",
+            "time": "13:21:50",
+            "month": "September",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Broken Issue",
+            "description": "Broken Issue reported in the area.",
+            "pincode": "500085",
+            "location": {
+                "lat": "17.312924",
+                "lng": "78.394186"
+            },
+            "category": "Streetlight / Broken",
+            "priority": "High",
+            "photo": "static/uploads/broken_issue55.jpeg",
+            "anonymous": false,
+            "upvotes": 6,
+            "date": "2024-08-05",
+            "time": "16:10:48",
+            "month": "August",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Potholes Issue",
+            "description": "Potholes Issue reported in the area.",
+            "pincode": "500045",
+            "location": {
+                "lat": "17.440081",
+                "lng": "78.348915"
+            },
+            "category": "Road / Potholes",
+            "priority": "High",
+            "photo": "static/uploads/potholes_issue61.jpeg",
+            "anonymous": false,
+            "upvotes": 13,
+            "date": "2024-10-25",
+            "time": "00:33:57",
+            "month": "October",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Blockage Issue",
+            "description": "Blockage Issue reported in the area.",
+            "pincode": "500081",
+            "location": {
+                "lat": "17.450401",
+                "lng": "78.380571"
+            },
+            "category": "Drainage / Blockage",
+            "priority": "High",
+            "photo": "static/uploads/blockage_issue63.jpeg",
+            "anonymous": false,
+            "upvotes": 34,
+            "date": "2025-07-14",
+            "time": "07:46:41",
+            "month": "July",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Power Cut Issue",
+            "description": "Power Cut Issue reported in the area.",
+            "pincode": "500081",
+            "location": {
+                "lat": "17.450401",
+                "lng": "78.380571"
+            },
+            "category": "Electricity / Power Cut",
+            "priority": "Medium",
+            "photo": "static/uploads/power_cut_issue70.jpeg",
+            "anonymous": false,
+            "upvotes": 0,
+            "date": "2024-07-29",
+            "time": "16:23:23",
+            "month": "July",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Potholes Issue",
+            "description": "Potholes Issue reported in the area.",
+            "pincode": "500081",
+            "location": {
+                "lat": "17.450401",
+                "lng": "78.380571"
+            },
+            "category": "Road / Potholes",
+            "priority": "High",
+            "photo": "static/uploads/potholes_issue71.jpeg",
+            "anonymous": false,
+            "upvotes": 35,
+            "date": "2024-10-03",
+            "time": "20:30:05",
+            "month": "October",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Broken Issue",
+            "description": "Broken Issue reported in the area.",
+            "pincode": "500003",
+            "location": {
+                "lat": "17.435353",
+                "lng": "78.471872"
+            },
+            "category": "Streetlight / Broken",
+            "priority": "High",
+            "photo": "static/uploads/broken_issue73.jpeg",
+            "anonymous": false,
+            "upvotes": 28,
+            "date": "2025-08-10",
+            "time": "03:33:57",
+            "month": "August",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Power Cut Issue",
+            "description": "Power Cut Issue reported in the area.",
+            "pincode": "500081",
+            "location": {
+                "lat": "17.450401",
+                "lng": "78.380571"
+            },
+            "category": "Electricity / Power Cut",
+            "priority": "Medium",
+            "photo": "static/uploads/power_cut_issue77.jpeg",
+            "anonymous": false,
+            "upvotes": 7,
+            "date": "2024-10-18",
+            "time": "16:53:30",
+            "month": "October",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Potholes Issue",
+            "description": "Potholes Issue reported in the area.",
+            "pincode": "500081",
+            "location": {
+                "lat": "17.450401",
+                "lng": "78.380571"
+            },
+            "category": "Road / Potholes",
+            "priority": "Medium",
+            "photo": "static/uploads/potholes_issue83.jpeg",
+            "anonymous": false,
+            "upvotes": 7,
+            "date": "2024-08-21",
+            "time": "13:26:05",
+            "month": "August",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Power Cut Issue",
+            "description": "Power Cut Issue reported in the area.",
+            "pincode": "500081",
+            "location": {
+                "lat": "17.450401",
+                "lng": "78.380571"
+            },
+            "category": "Electricity / Power Cut",
+            "priority": "High",
+            "photo": "static/uploads/power_cut_issue86.jpeg",
+            "anonymous": false,
+            "upvotes": 40,
+            "date": "2024-09-21",
+            "time": "11:59:59",
+            "month": "September",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Broken Issue",
+            "description": "Broken Issue reported in the area.",
+            "pincode": "500072",
+            "location": {
+                "lat": "17.484348",
+                "lng": "78.400132"
+            },
+            "category": "Streetlight / Broken",
+            "priority": "Low",
+            "photo": "static/uploads/broken_issue93.jpeg",
+            "anonymous": false,
+            "upvotes": 28,
+            "date": "2024-11-13",
+            "time": "16:48:03",
+            "month": "November",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Leakage Issue",
+            "description": "Leakage Issue reported in the area.",
+            "pincode": "500081",
+            "location": {
+                "lat": "17.450401",
+                "lng": "78.380571"
+            },
+            "category": "Water / Leakage",
+            "priority": "Low",
+            "photo": "static/uploads/leakage_issue98.jpeg",
+            "anonymous": false,
+            "upvotes": 28,
+            "date": "2024-02-04",
+            "time": "01:45:19",
+            "month": "February",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Potholes Issue",
+            "description": "Potholes Issue reported in the area.",
+            "pincode": "500003",
+            "location": {
+                "lat": "17.435353",
+                "lng": "78.471872"
+            },
+            "category": "Road / Potholes",
+            "priority": "High",
+            "photo": "static/uploads/potholes_issue100.jpeg",
+            "anonymous": false,
+            "upvotes": 21,
+            "date": "2024-07-09",
+            "time": "23:27:26",
+            "month": "July",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Overflow Issue",
+            "description": "Overflow Issue reported in the area.",
+            "pincode": "500085",
+            "location": {
+                "lat": "17.312924",
+                "lng": "78.394186"
+            },
+            "category": "Garbage / Overflow",
+            "priority": "Low",
+            "photo": "static/uploads/overflow_issue102.jpeg",
+            "anonymous": false,
+            "upvotes": 5,
+            "date": "2024-03-12",
+            "time": "22:02:47",
+            "month": "March",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Potholes Issue",
+            "description": "Potholes Issue reported in the area.",
+            "pincode": "500085",
+            "location": {
+                "lat": "17.312924",
+                "lng": "78.394186"
+            },
+            "category": "Road / Potholes",
+            "priority": "Low",
+            "photo": "static/uploads/potholes_issue104.jpeg",
+            "anonymous": false,
+            "upvotes": 2,
+            "date": "2024-07-01",
+            "time": "04:25:55",
+            "month": "July",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Power Cut Issue",
+            "description": "Power Cut Issue reported in the area.",
+            "pincode": "500072",
+            "location": {
+                "lat": "17.484348",
+                "lng": "78.400132"
+            },
+            "category": "Electricity / Power Cut",
+            "priority": "Medium",
+            "photo": "static/uploads/power_cut_issue106.jpeg",
+            "anonymous": false,
+            "upvotes": 9,
+            "date": "2024-07-17",
+            "time": "16:53:50",
+            "month": "July",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Congestion Issue",
+            "description": "Congestion Issue reported in the area.",
+            "pincode": "500085",
+            "location": {
+                "lat": "17.312924",
+                "lng": "78.394186"
+            },
+            "category": "Traffic / Congestion",
+            "priority": "Medium",
+            "photo": "static/uploads/congestion_issue113.jpeg",
+            "anonymous": false,
+            "upvotes": 22,
+            "date": "2024-03-09",
+            "time": "04:35:20",
+            "month": "March",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Park Issue",
+            "description": "Park Issue reported in the area.",
+            "pincode": "500072",
+            "location": {
+                "lat": "17.484348",
+                "lng": "78.400132"
+            },
+            "category": "Public Facility / Park",
+            "priority": "High",
+            "photo": "static/uploads/park_issue119.jpeg",
+            "anonymous": false,
+            "upvotes": 8,
+            "date": "2024-01-10",
+            "time": "14:37:58",
+            "month": "January",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Leakage Issue",
+            "description": "Leakage Issue reported in the area.",
+            "pincode": "500045",
+            "location": {
+                "lat": "17.440081",
+                "lng": "78.348915"
+            },
+            "category": "Water / Leakage",
+            "priority": "Medium",
+            "photo": "static/uploads/leakage_issue131.jpeg",
+            "anonymous": false,
+            "upvotes": 27,
+            "date": "2023-09-03",
+            "time": "07:40:27",
+            "month": "September",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Park Issue",
+            "description": "Park Issue reported in the area.",
+            "pincode": "500072",
+            "location": {
+                "lat": "17.484348",
+                "lng": "78.400132"
+            },
+            "category": "Public Facility / Park",
+            "priority": "Low",
+            "photo": "static/uploads/park_issue135.jpeg",
+            "anonymous": false,
+            "upvotes": 24,
+            "date": "2023-12-19",
+            "time": "06:44:58",
+            "month": "December",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Congestion Issue",
+            "description": "Congestion Issue reported in the area.",
+            "pincode": "500072",
+            "location": {
+                "lat": "17.484348",
+                "lng": "78.400132"
+            },
+            "category": "Traffic / Congestion",
+            "priority": "High",
+            "photo": "static/uploads/congestion_issue143.jpeg",
+            "anonymous": false,
+            "upvotes": 9,
+            "date": "2024-05-10",
+            "time": "14:46:06",
+            "month": "May",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Power Cut Issue",
+            "description": "Power Cut Issue reported in the area.",
+            "pincode": "500081",
+            "location": {
+                "lat": "17.450401",
+                "lng": "78.380571"
+            },
+            "category": "Electricity / Power Cut",
+            "priority": "High",
+            "photo": "static/uploads/power_cut_issue144.jpeg",
+            "anonymous": false,
+            "upvotes": 5,
+            "date": "2025-09-08",
+            "time": "04:25:08",
+            "month": "September",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Park Issue",
+            "description": "Park Issue reported in the area.",
+            "pincode": "500072",
+            "location": {
+                "lat": "17.484348",
+                "lng": "78.400132"
+            },
+            "category": "Public Facility / Park",
+            "priority": "High",
+            "photo": "static/uploads/park_issue147.jpeg",
+            "anonymous": false,
+            "upvotes": 41,
+            "date": "2024-07-03",
+            "time": "10:43:09",
+            "month": "July",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Leakage Issue",
+            "description": "Leakage Issue reported in the area.",
+            "pincode": "500003",
+            "location": {
+                "lat": "17.435353",
+                "lng": "78.471872"
+            },
+            "category": "Water / Leakage",
+            "priority": "Medium",
+            "photo": "static/uploads/leakage_issue148.jpeg",
+            "anonymous": false,
+            "upvotes": 50,
+            "date": "2024-11-18",
+            "time": "11:54:22",
+            "month": "November",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Potholes Issue",
+            "description": "Potholes Issue reported in the area.",
+            "pincode": "500072",
+            "location": {
+                "lat": "17.484348",
+                "lng": "78.400132"
+            },
+            "category": "Road / Potholes",
+            "priority": "Low",
+            "photo": "static/uploads/potholes_issue156.jpeg",
+            "anonymous": false,
+            "upvotes": 37,
+            "date": "2025-06-12",
+            "time": "05:43:03",
+            "month": "June",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Park Issue",
+            "description": "Park Issue reported in the area.",
+            "pincode": "500085",
+            "location": {
+                "lat": "17.312924",
+                "lng": "78.394186"
+            },
+            "category": "Public Facility / Park",
+            "priority": "Medium",
+            "photo": "static/uploads/park_issue161.jpeg",
+            "anonymous": false,
+            "upvotes": 46,
+            "date": "2023-11-27",
+            "time": "07:05:38",
+            "month": "November",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Power Cut Issue",
+            "description": "Power Cut Issue reported in the area.",
+            "pincode": "500081",
+            "location": {
+                "lat": "17.450401",
+                "lng": "78.380571"
+            },
+            "category": "Electricity / Power Cut",
+            "priority": "High",
+            "photo": "static/uploads/power_cut_issue162.jpeg",
+            "anonymous": false,
+            "upvotes": 27,
+            "date": "2024-01-17",
+            "time": "03:22:50",
+            "month": "January",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Potholes Issue",
+            "description": "Potholes Issue reported in the area.",
+            "pincode": "500081",
+            "location": {
+                "lat": "17.450401",
+                "lng": "78.380571"
+            },
+            "category": "Road / Potholes",
+            "priority": "Medium",
+            "photo": "static/uploads/potholes_issue163.jpeg",
+            "anonymous": false,
+            "upvotes": 27,
+            "date": "2025-04-02",
+            "time": "23:26:26",
+            "month": "April",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Power Cut Issue",
+            "description": "Power Cut Issue reported in the area.",
+            "pincode": "500081",
+            "location": {
+                "lat": "17.450401",
+                "lng": "78.380571"
+            },
+            "category": "Electricity / Power Cut",
+            "priority": "High",
+            "photo": "static/uploads/power_cut_issue166.jpeg",
+            "anonymous": false,
+            "upvotes": 0,
+            "date": "2024-10-03",
+            "time": "13:43:27",
+            "month": "October",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Leakage Issue",
+            "description": "Leakage Issue reported in the area.",
+            "pincode": "500072",
+            "location": {
+                "lat": "17.484348",
+                "lng": "78.400132"
+            },
+            "category": "Water / Leakage",
+            "priority": "Low",
+            "photo": "static/uploads/leakage_issue167.jpeg",
+            "anonymous": false,
+            "upvotes": 3,
+            "date": "2025-04-25",
+            "time": "17:51:24",
+            "month": "April",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Leakage Issue",
+            "description": "Leakage Issue reported in the area.",
+            "pincode": "500045",
+            "location": {
+                "lat": "17.440081",
+                "lng": "78.348915"
+            },
+            "category": "Water / Leakage",
+            "priority": "High",
+            "photo": "static/uploads/leakage_issue171.jpeg",
+            "anonymous": false,
+            "upvotes": 13,
+            "date": "2023-09-30",
+            "time": "21:07:52",
+            "month": "September",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Blockage Issue",
+            "description": "Blockage Issue reported in the area.",
+            "pincode": "500003",
+            "location": {
+                "lat": "17.435353",
+                "lng": "78.471872"
+            },
+            "category": "Drainage / Blockage",
+            "priority": "Low",
+            "photo": "static/uploads/blockage_issue179.jpeg",
+            "anonymous": false,
+            "upvotes": 18,
+            "date": "2023-12-14",
+            "time": "03:54:59",
+            "month": "December",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Power Cut Issue",
+            "description": "Power Cut Issue reported in the area.",
+            "pincode": "500003",
+            "location": {
+                "lat": "17.435353",
+                "lng": "78.471872"
+            },
+            "category": "Electricity / Power Cut",
+            "priority": "High",
+            "photo": "static/uploads/power_cut_issue183.jpeg",
+            "anonymous": false,
+            "upvotes": 33,
+            "date": "2024-10-21",
+            "time": "05:00:11",
+            "month": "October",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Park Issue",
+            "description": "Park Issue reported in the area.",
+            "pincode": "500072",
+            "location": {
+                "lat": "17.484348",
+                "lng": "78.400132"
+            },
+            "category": "Public Facility / Park",
+            "priority": "Low",
+            "photo": "static/uploads/park_issue186.jpeg",
+            "anonymous": false,
+            "upvotes": 30,
+            "date": "2024-02-17",
+            "time": "17:16:10",
+            "month": "February",
+            "username": "neshmitha"
+        },
+        {
+            "title": "Broken Issue",
+            "description": "Broken Issue reported in the area.",
+            "pincode": "500081",
+            "location": {
+                "lat": "17.450401",
+                "lng": "78.380571"
+            },
+            "category": "Streetlight / Broken",
+            "priority": "Low",
+            "photo": "static/uploads/broken_issue187.jpeg",
+            "anonymous": false,
+            "upvotes": 3,
+            "date": "2025-05-16",
+            "time": "16:56:41",
+            "month": "May",
+            "username": "neshmitha"
+        }
+    ],
+    "lasya_issues": [
+        {
+            "title": "Potholes Issue",
+            "description": "Potholes Issue reported in the area.",
+            "pincode": "500085",
+            "location": {
+                "lat": "17.312924",
+                "lng": "78.394186"
+            },
+            "category": "Road / Potholes",
+            "priority": "Low",
+            "photo": "static/uploads/potholes_issue4.jpeg",
+            "anonymous": false,
+            "upvotes": 34,
+            "date": "2025-08-22",
+            "time": "11:33:58",
+            "month": "August",
+            "username": "lasya"
+        },
+        {
+            "title": "Broken Issue",
+            "description": "Broken Issue reported in the area.",
+            "pincode": "500003",
+            "location": {
+                "lat": "17.435353",
+                "lng": "78.471872"
+            },
+            "category": "Streetlight / Broken",
+            "priority": "High",
+            "photo": "static/uploads/broken_issue7.jpeg",
+            "anonymous": false,
+            "upvotes": 41,
+            "date": "2024-04-19",
+            "time": "07:37:49",
+            "month": "April",
+            "username": "lasya"
+        },
+        {
+            "title": "Park Issue",
+            "description": "Park Issue reported in the area.",
+            "pincode": "500045",
+            "location": {
+                "lat": "17.440081",
+                "lng": "78.348915"
+            },
+            "category": "Public Facility / Park",
+            "priority": "High",
+            "photo": "static/uploads/park_issue10.jpeg",
+            "anonymous": false,
+            "upvotes": 36,
+            "date": "2024-03-03",
+            "time": "18:43:42",
+            "month": "March",
+            "username": "lasya"
+        },
+        {
+            "title": "Blockage Issue",
+            "description": "Blockage Issue reported in the area.",
+            "pincode": "500081",
+            "location": {
+                "lat": "17.450401",
+                "lng": "78.380571"
+            },
+            "category": "Drainage / Blockage",
+            "priority": "High",
+            "photo": "static/uploads/blockage_issue18.jpeg",
+            "anonymous": false,
+            "upvotes": 31,
+            "date": "2024-07-12",
+            "time": "20:15:48",
+            "month": "July",
+            "username": "lasya"
+        },
+        {
+            "title": "Congestion Issue",
+            "description": "Congestion Issue reported in the area.",
+            "pincode": "500045",
+            "location": {
+                "lat": "17.440081",
+                "lng": "78.348915"
+            },
+            "category": "Traffic / Congestion",
+            "priority": "High",
+            "photo": "static/uploads/congestion_issue36.jpeg",
+            "anonymous": false,
+            "upvotes": 22,
+            "date": "2025-02-11",
+            "time": "10:58:23",
+            "month": "February",
+            "username": "lasya"
+        },
+        {
+            "title": "Park Issue",
+            "description": "Park Issue reported in the area.",
+            "pincode": "500085",
+            "location": {
+                "lat": "17.312924",
+                "lng": "78.394186"
+            },
+            "category": "Public Facility / Park",
+            "priority": "Low",
+            "photo": "static/uploads/park_issue39.jpeg",
+            "anonymous": false,
+            "upvotes": 9,
+            "date": "2024-09-07",
+            "time": "20:56:30",
+            "month": "September",
+            "username": "lasya"
+        },
+        {
+            "title": "Overflow Issue",
+            "description": "Overflow Issue reported in the area.",
+            "pincode": "500003",
+            "location": {
+                "lat": "17.435353",
+                "lng": "78.471872"
+            },
+            "category": "Garbage / Overflow",
+            "priority": "Low",
+            "photo": "static/uploads/overflow_issue40.jpeg",
+            "anonymous": false,
+            "upvotes": 25,
+            "date": "2025-06-29",
+            "time": "11:07:49",
+            "month": "June",
+            "username": "lasya"
+        },
+        {
+            "title": "Park Issue",
+            "description": "Park Issue reported in the area.",
+            "pincode": "500072",
+            "location": {
+                "lat": "17.484348",
+                "lng": "78.400132"
+            },
+            "category": "Public Facility / Park",
+            "priority": "Medium",
+            "photo": "static/uploads/park_issue41.jpeg",
+            "anonymous": false,
+            "upvotes": 22,
+            "date": "2024-01-22",
+            "time": "06:20:13",
+            "month": "January",
+            "username": "lasya"
+        },
+        {
+            "title": "Overflow Issue",
+            "description": "Overflow Issue reported in the area.",
+            "pincode": "500072",
+            "location": {
+                "lat": "17.484348",
+                "lng": "78.400132"
+            },
+            "category": "Garbage / Overflow",
+            "priority": "Medium",
+            "photo": "static/uploads/overflow_issue44.jpeg",
+            "anonymous": false,
+            "upvotes": 36,
+            "date": "2025-04-26",
+            "time": "16:08:59",
+            "month": "April",
+            "username": "lasya"
+        },
+        {
+            "title": "Blockage Issue",
+            "description": "Blockage Issue reported in the area.",
+            "pincode": "500045",
+            "location": {
+                "lat": "17.440081",
+                "lng": "78.348915"
+            },
+            "category": "Drainage / Blockage",
+            "priority": "Medium",
+            "photo": "static/uploads/blockage_issue54.jpeg",
+            "anonymous": false,
+            "upvotes": 8,
+            "date": "2023-11-12",
+            "time": "16:38:27",
+            "month": "November",
+            "username": "lasya"
+        },
+        {
+            "title": "Overflow Issue",
+            "description": "Overflow Issue reported in the area.",
+            "pincode": "500072",
+            "location": {
+                "lat": "17.484348",
+                "lng": "78.400132"
+            },
+            "category": "Garbage / Overflow",
+            "priority": "High",
+            "photo": "static/uploads/overflow_issue57.jpeg",
+            "anonymous": false,
+            "upvotes": 11,
+            "date": "2025-07-18",
+            "time": "14:42:08",
+            "month": "July",
+            "username": "lasya"
+        },
+        {
+            "title": "Park Issue",
+            "description": "Park Issue reported in the area.",
+            "pincode": "500003",
+            "location": {
+                "lat": "17.435353",
+                "lng": "78.471872"
+            },
+            "category": "Public Facility / Park",
+            "priority": "Medium",
+            "photo": "static/uploads/park_issue62.jpeg",
+            "anonymous": false,
+            "upvotes": 21,
+            "date": "2024-12-30",
+            "time": "04:55:30",
+            "month": "December",
+            "username": "lasya"
+        },
+        {
+            "title": "Blockage Issue",
+            "description": "Blockage Issue reported in the area.",
+            "pincode": "500003",
+            "location": {
+                "lat": "17.435353",
+                "lng": "78.471872"
+            },
+            "category": "Drainage / Blockage",
+            "priority": "Low",
+            "photo": "static/uploads/blockage_issue65.jpeg",
+            "anonymous": false,
+            "upvotes": 36,
+            "date": "2024-09-08",
+            "time": "10:51:32",
+            "month": "September",
+            "username": "lasya"
+        },
+        {
+            "title": "Overflow Issue",
+            "description": "Overflow Issue reported in the area.",
+            "pincode": "500003",
+            "location": {
+                "lat": "17.435353",
+                "lng": "78.471872"
+            },
+            "category": "Garbage / Overflow",
+            "priority": "Low",
+            "photo": "static/uploads/overflow_issue66.jpeg",
+            "anonymous": false,
+            "upvotes": 2,
+            "date": "2024-06-08",
+            "time": "06:48:05",
+            "month": "June",
+            "username": "lasya"
+        },
+        {
+            "title": "Leakage Issue",
+            "description": "Leakage Issue reported in the area.",
+            "pincode": "500085",
+            "location": {
+                "lat": "17.312924",
+                "lng": "78.394186"
+            },
+            "category": "Water / Leakage",
+            "priority": "Low",
+            "photo": "static/uploads/leakage_issue68.jpeg",
+            "anonymous": false,
+            "upvotes": 9,
+            "date": "2023-10-01",
+            "time": "15:38:22",
+            "month": "October",
+            "username": "lasya"
+        },
+        {
+            "title": "Park Issue",
+            "description": "Park Issue reported in the area.",
+            "pincode": "500081",
+            "location": {
+                "lat": "17.450401",
+                "lng": "78.380571"
+            },
+            "category": "Public Facility / Park",
+            "priority": "Low",
+            "photo": "static/uploads/park_issue81.jpeg",
+            "anonymous": false,
+            "upvotes": 35,
+            "date": "2023-10-24",
+            "time": "05:17:32",
+            "month": "October",
+            "username": "lasya"
+        },
+        {
+            "title": "Power Cut Issue",
+            "description": "Power Cut Issue reported in the area.",
+            "pincode": "500081",
+            "location": {
+                "lat": "17.450401",
+                "lng": "78.380571"
+            },
+            "category": "Electricity / Power Cut",
+            "priority": "Medium",
+            "photo": "static/uploads/power_cut_issue90.jpeg",
+            "anonymous": false,
+            "upvotes": 36,
+            "date": "2025-07-17",
+            "time": "09:11:35",
+            "month": "July",
+            "username": "lasya"
+        },
+        {
+            "title": "Power Cut Issue",
+            "description": "Power Cut Issue reported in the area.",
+            "pincode": "500072",
+            "location": {
+                "lat": "17.484348",
+                "lng": "78.400132"
+            },
+            "category": "Electricity / Power Cut",
+            "priority": "High",
+            "photo": "static/uploads/power_cut_issue95.jpeg",
+            "anonymous": false,
+            "upvotes": 15,
+            "date": "2024-09-29",
+            "time": "13:40:44",
+            "month": "September",
+            "username": "lasya"
+        },
+        {
+            "title": "Blockage Issue",
+            "description": "Blockage Issue reported in the area.",
+            "pincode": "500003",
+            "location": {
+                "lat": "17.435353",
+                "lng": "78.471872"
+            },
+            "category": "Drainage / Blockage",
+            "priority": "Medium",
+            "photo": "static/uploads/blockage_issue103.jpeg",
+            "anonymous": false,
+            "upvotes": 33,
+            "date": "2024-07-06",
+            "time": "12:30:42",
+            "month": "July",
+            "username": "lasya"
+        },
+        {
+            "title": "Power Cut Issue",
+            "description": "Power Cut Issue reported in the area.",
+            "pincode": "500085",
+            "location": {
+                "lat": "17.312924",
+                "lng": "78.394186"
+            },
+            "category": "Electricity / Power Cut",
+            "priority": "Medium",
+            "photo": "static/uploads/power_cut_issue118.jpeg",
+            "anonymous": false,
+            "upvotes": 1,
+            "date": "2024-01-22",
+            "time": "21:52:39",
+            "month": "January",
+            "username": "lasya"
+        },
+        {
+            "title": "Congestion Issue",
+            "description": "Congestion Issue reported in the area.",
+            "pincode": "500072",
+            "location": {
+                "lat": "17.484348",
+                "lng": "78.400132"
+            },
+            "category": "Traffic / Congestion",
+            "priority": "High",
+            "photo": "static/uploads/congestion_issue125.jpeg",
+            "anonymous": false,
+            "upvotes": 44,
+            "date": "2025-02-14",
+            "time": "13:10:29",
+            "month": "February",
+            "username": "lasya"
+        },
+        {
+            "title": "Congestion Issue",
+            "description": "Congestion Issue reported in the area.",
+            "pincode": "500081",
+            "location": {
+                "lat": "17.450401",
+                "lng": "78.380571"
+            },
+            "category": "Traffic / Congestion",
+            "priority": "Medium",
+            "photo": "static/uploads/congestion_issue126.jpeg",
+            "anonymous": false,
+            "upvotes": 50,
+            "date": "2023-12-29",
+            "time": "20:23:47",
+            "month": "December",
+            "username": "lasya"
+        },
+        {
+            "title": "Park Issue",
+            "description": "Park Issue reported in the area.",
+            "pincode": "500072",
+            "location": {
+                "lat": "17.484348",
+                "lng": "78.400132"
+            },
+            "category": "Public Facility / Park",
+            "priority": "Low",
+            "photo": "static/uploads/park_issue136.jpeg",
+            "anonymous": false,
+            "upvotes": 32,
+            "date": "2023-12-05",
+            "time": "03:25:01",
+            "month": "December",
+            "username": "lasya"
+        },
+        {
+            "title": "Overflow Issue",
+            "description": "Overflow Issue reported in the area.",
+            "pincode": "500085",
+            "location": {
+                "lat": "17.312924",
+                "lng": "78.394186"
+            },
+            "category": "Garbage / Overflow",
+            "priority": "Medium",
+            "photo": "static/uploads/overflow_issue145.jpeg",
+            "anonymous": false,
+            "upvotes": 26,
+            "date": "2025-08-06",
+            "time": "18:11:00",
+            "month": "August",
+            "username": "lasya"
+        },
+        {
+            "title": "Leakage Issue",
+            "description": "Leakage Issue reported in the area.",
+            "pincode": "500085",
+            "location": {
+                "lat": "17.312924",
+                "lng": "78.394186"
+            },
+            "category": "Water / Leakage",
+            "priority": "Low",
+            "photo": "static/uploads/leakage_issue153.jpeg",
+            "anonymous": false,
+            "upvotes": 17,
+            "date": "2024-12-30",
+            "time": "17:30:59",
+            "month": "December",
+            "username": "lasya"
+        },
+        {
+            "title": "Blockage Issue",
+            "description": "Blockage Issue reported in the area.",
+            "pincode": "500003",
+            "location": {
+                "lat": "17.435353",
+                "lng": "78.471872"
+            },
+            "category": "Drainage / Blockage",
+            "priority": "Low",
+            "photo": "static/uploads/blockage_issue155.jpeg",
+            "anonymous": false,
+            "upvotes": 2,
+            "date": "2025-07-18",
+            "time": "15:08:05",
+            "month": "July",
+            "username": "lasya"
+        },
+        {
+            "title": "Potholes Issue",
+            "description": "Potholes Issue reported in the area.",
+            "pincode": "500085",
+            "location": {
+                "lat": "17.312924",
+                "lng": "78.394186"
+            },
+            "category": "Road / Potholes",
+            "priority": "Medium",
+            "photo": "static/uploads/potholes_issue174.jpeg",
+            "anonymous": false,
+            "upvotes": 17,
+            "date": "2025-05-10",
+            "time": "07:06:22",
+            "month": "May",
+            "username": "lasya"
+        },
+        {
+            "title": "Leakage Issue",
+            "description": "Leakage Issue reported in the area.",
+            "pincode": "500085",
+            "location": {
+                "lat": "17.312924",
+                "lng": "78.394186"
+            },
+            "category": "Water / Leakage",
+            "priority": "Low",
+            "photo": "static/uploads/leakage_issue178.jpeg",
+            "anonymous": false,
+            "upvotes": 37,
+            "date": "2023-12-28",
+            "time": "06:53:22",
+            "month": "December",
+            "username": "lasya"
+        },
+        {
+            "title": "Congestion Issue",
+            "description": "Congestion Issue reported in the area.",
+            "pincode": "500003",
+            "location": {
+                "lat": "17.435353",
+                "lng": "78.471872"
+            },
+            "category": "Traffic / Congestion",
+            "priority": "Low",
+            "photo": "static/uploads/congestion_issue182.jpeg",
+            "anonymous": false,
+            "upvotes": 48,
+            "date": "2024-12-25",
+            "time": "22:57:49",
+            "month": "December",
+            "username": "lasya"
+        },
+        {
+            "title": "Park Issue",
+            "description": "Park Issue reported in the area.",
+            "pincode": "500085",
+            "location": {
+                "lat": "17.312924",
+                "lng": "78.394186"
+            },
+            "category": "Public Facility / Park",
+            "priority": "High",
+            "photo": "static/uploads/park_issue188.jpeg",
+            "anonymous": false,
+            "upvotes": 15,
+            "date": "2024-10-29",
+            "time": "17:07:44",
+            "month": "October",
+            "username": "lasya"
+        },
+        {
+            "title": "Broken Issue",
+            "description": "Broken Issue reported in the area.",
+            "pincode": "500003",
+            "location": {
+                "lat": "17.435353",
+                "lng": "78.471872"
+            },
+            "category": "Streetlight / Broken",
+            "priority": "High",
+            "photo": "static/uploads/broken_issue189.jpeg",
+            "anonymous": false,
+            "upvotes": 48,
+            "date": "2024-03-09",
+            "time": "05:27:53",
+            "month": "March",
+            "username": "lasya"
+        }
+    ],
+    "rishika_issues": [
+        {
+            "title": "Congestion Issue",
+            "description": "Congestion Issue reported in the area.",
+            "pincode": "500003",
+            "location": {
+                "lat": "17.435353",
+                "lng": "78.471872"
+            },
+            "category": "Traffic / Congestion",
+            "priority": "Low",
+            "photo": "static/uploads/congestion_issue1.jpeg",
+            "anonymous": false,
+            "upvotes": 27,
+            "date": "2024-12-15",
+            "time": "22:20:50",
+            "month": "December",
+            "username": "rishika"
+        },
+        {
+            "title": "Potholes Issue",
+            "description": "Potholes Issue reported in the area.",
+            "pincode": "500045",
+            "location": {
+                "lat": "17.440081",
+                "lng": "78.348915"
+            },
+            "category": "Road / Potholes",
+            "priority": "Medium",
+            "photo": "static/uploads/potholes_issue15.jpeg",
+            "anonymous": false,
+            "upvotes": 49,
+            "date": "2023-11-18",
+            "time": "20:56:24",
+            "month": "November",
+            "username": "rishika"
+        },
+        {
+            "title": "Potholes Issue",
+            "description": "Potholes Issue reported in the area.",
+            "pincode": "500085",
+            "location": {
+                "lat": "17.312924",
+                "lng": "78.394186"
+            },
+            "category": "Road / Potholes",
+            "priority": "High",
+            "photo": "static/uploads/potholes_issue20.jpeg",
+            "anonymous": false,
+            "upvotes": 42,
+            "date": "2024-08-07",
+            "time": "21:00:20",
+            "month": "August",
+            "username": "rishika"
+        },
+        {
+            "title": "Congestion Issue",
+            "description": "Congestion Issue reported in the area.",
+            "pincode": "500003",
+            "location": {
+                "lat": "17.435353",
+                "lng": "78.471872"
+            },
+            "category": "Traffic / Congestion",
+            "priority": "Low",
+            "photo": "static/uploads/congestion_issue25.jpeg",
+            "anonymous": false,
+            "upvotes": 35,
+            "date": "2024-04-06",
+            "time": "08:26:08",
+            "month": "April",
+            "username": "rishika"
+        },
+        {
+            "title": "Park Issue",
+            "description": "Park Issue reported in the area.",
+            "pincode": "500081",
+            "location": {
+                "lat": "17.450401",
+                "lng": "78.380571"
+            },
+            "category": "Public Facility / Park",
+            "priority": "Low",
+            "photo": "static/uploads/park_issue28.jpeg",
+            "anonymous": false,
+            "upvotes": 7,
+            "date": "2025-04-09",
+            "time": "17:28:15",
+            "month": "April",
+            "username": "rishika"
+        },
+        {
+            "title": "Broken Issue",
+            "description": "Broken Issue reported in the area.",
+            "pincode": "500003",
+            "location": {
+                "lat": "17.435353",
+                "lng": "78.471872"
+            },
+            "category": "Streetlight / Broken",
+            "priority": "Medium",
+            "photo": "static/uploads/broken_issue29.jpeg",
+            "anonymous": false,
+            "upvotes": 22,
+            "date": "2023-09-07",
+            "time": "19:59:54",
+            "month": "September",
+            "username": "rishika"
+        },
+        {
+            "title": "Broken Issue",
+            "description": "Broken Issue reported in the area.",
+            "pincode": "500003",
+            "location": {
+                "lat": "17.435353",
+                "lng": "78.471872"
+            },
+            "category": "Streetlight / Broken",
+            "priority": "Medium",
+            "photo": "static/uploads/broken_issue30.jpeg",
+            "anonymous": false,
+            "upvotes": 18,
+            "date": "2025-02-21",
+            "time": "03:15:27",
+            "month": "February",
+            "username": "rishika"
+        },
+        {
+            "title": "Broken Issue",
+            "description": "Broken Issue reported in the area.",
+            "pincode": "500045",
+            "location": {
+                "lat": "17.440081",
+                "lng": "78.348915"
+            },
+            "category": "Streetlight / Broken",
+            "priority": "High",
+            "photo": "static/uploads/broken_issue32.jpeg",
+            "anonymous": false,
+            "upvotes": 16,
+            "date": "2025-06-07",
+            "time": "04:39:55",
+            "month": "June",
+            "username": "rishika"
+        },
+        {
+            "title": "Leakage Issue",
+            "description": "Leakage Issue reported in the area.",
+            "pincode": "500072",
+            "location": {
+                "lat": "17.484348",
+                "lng": "78.400132"
+            },
+            "category": "Water / Leakage",
+            "priority": "Medium",
+            "photo": "static/uploads/leakage_issue33.jpeg",
+            "anonymous": false,
+            "upvotes": 50,
+            "date": "2024-12-09",
+            "time": "15:06:06",
+            "month": "December",
+            "username": "rishika"
+        },
+        {
+            "title": "Congestion Issue",
+            "description": "Congestion Issue reported in the area.",
+            "pincode": "500003",
+            "location": {
+                "lat": "17.435353",
+                "lng": "78.471872"
+            },
+            "category": "Traffic / Congestion",
+            "priority": "High",
+            "photo": "static/uploads/congestion_issue35.jpeg",
+            "anonymous": false,
+            "upvotes": 47,
+            "date": "2024-08-28",
+            "time": "23:23:56",
+            "month": "August",
+            "username": "rishika"
+        },
+        {
+            "title": "Park Issue",
+            "description": "Park Issue reported in the area.",
+            "pincode": "500085",
+            "location": {
+                "lat": "17.312924",
+                "lng": "78.394186"
+            },
+            "category": "Public Facility / Park",
+            "priority": "Medium",
+            "photo": "static/uploads/park_issue37.jpeg",
+            "anonymous": false,
+            "upvotes": 34,
+            "date": "2024-12-08",
+            "time": "09:22:51",
+            "month": "December",
+            "username": "rishika"
+        },
+        {
+            "title": "Blockage Issue",
+            "description": "Blockage Issue reported in the area.",
+            "pincode": "500072",
+            "location": {
+                "lat": "17.484348",
+                "lng": "78.400132"
+            },
+            "category": "Drainage / Blockage",
+            "priority": "Low",
+            "photo": "static/uploads/blockage_issue42.jpeg",
+            "anonymous": false,
+            "upvotes": 31,
+            "date": "2024-01-26",
+            "time": "04:00:34",
+            "month": "January",
+            "username": "rishika"
+        },
+        {
+            "title": "Broken Issue",
+            "description": "Broken Issue reported in the area.",
+            "pincode": "500003",
+            "location": {
+                "lat": "17.435353",
+                "lng": "78.471872"
+            },
+            "category": "Streetlight / Broken",
+            "priority": "Medium",
+            "photo": "static/uploads/broken_issue47.jpeg",
+            "anonymous": false,
+            "upvotes": 4,
+            "date": "2024-04-12",
+            "time": "01:12:03",
+            "month": "April",
+            "username": "rishika"
+        },
+        {
+            "title": "Leakage Issue",
+            "description": "Leakage Issue reported in the area.",
+            "pincode": "500081",
+            "location": {
+                "lat": "17.450401",
+                "lng": "78.380571"
+            },
+            "category": "Water / Leakage",
+            "priority": "High",
+            "photo": "static/uploads/leakage_issue60.jpeg",
+            "anonymous": false,
+            "upvotes": 26,
+            "date": "2025-04-08",
+            "time": "04:15:57",
+            "month": "April",
+            "username": "rishika"
+        },
+        {
+            "title": "Leakage Issue",
+            "description": "Leakage Issue reported in the area.",
+            "pincode": "500072",
+            "location": {
+                "lat": "17.484348",
+                "lng": "78.400132"
+            },
+            "category": "Water / Leakage",
+            "priority": "High",
+            "photo": "static/uploads/leakage_issue64.jpeg",
+            "anonymous": false,
+            "upvotes": 45,
+            "date": "2025-08-07",
+            "time": "20:15:54",
+            "month": "August",
+            "username": "rishika"
+        },
+        {
+            "title": "Leakage Issue",
+            "description": "Leakage Issue reported in the area.",
+            "pincode": "500081",
+            "location": {
+                "lat": "17.450401",
+                "lng": "78.380571"
+            },
+            "category": "Water / Leakage",
+            "priority": "Low",
+            "photo": "static/uploads/leakage_issue67.jpeg",
+            "anonymous": false,
+            "upvotes": 1,
+            "date": "2024-03-07",
+            "time": "21:13:09",
+            "month": "March",
+            "username": "rishika"
+        },
+        {
+            "title": "Overflow Issue",
+            "description": "Overflow Issue reported in the area.",
+            "pincode": "500072",
+            "location": {
+                "lat": "17.484348",
+                "lng": "78.400132"
+            },
+            "category": "Garbage / Overflow",
+            "priority": "High",
+            "photo": "static/uploads/overflow_issue69.jpeg",
+            "anonymous": false,
+            "upvotes": 20,
+            "date": "2024-06-17",
+            "time": "01:31:48",
+            "month": "June",
+            "username": "rishika"
+        },
+        {
+            "title": "Overflow Issue",
+            "description": "Overflow Issue reported in the area.",
+            "pincode": "500045",
+            "location": {
+                "lat": "17.440081",
+                "lng": "78.348915"
+            },
+            "category": "Garbage / Overflow",
+            "priority": "Medium",
+            "photo": "static/uploads/overflow_issue87.jpeg",
+            "anonymous": false,
+            "upvotes": 34,
+            "date": "2025-01-27",
+            "time": "15:42:13",
+            "month": "January",
+            "username": "rishika"
+        },
+        {
+            "title": "Park Issue",
+            "description": "Park Issue reported in the area.",
+            "pincode": "500045",
+            "location": {
+                "lat": "17.440081",
+                "lng": "78.348915"
+            },
+            "category": "Public Facility / Park",
+            "priority": "Low",
+            "photo": "static/uploads/park_issue88.jpeg",
+            "anonymous": false,
+            "upvotes": 47,
+            "date": "2025-05-01",
+            "time": "12:55:36",
+            "month": "May",
+            "username": "rishika"
+        },
+        {
+            "title": "Power Cut Issue",
+            "description": "Power Cut Issue reported in the area.",
+            "pincode": "500085",
+            "location": {
+                "lat": "17.312924",
+                "lng": "78.394186"
+            },
+            "category": "Electricity / Power Cut",
+            "priority": "Low",
+            "photo": "static/uploads/power_cut_issue89.jpeg",
+            "anonymous": false,
+            "upvotes": 36,
+            "date": "2023-10-22",
+            "time": "18:56:42",
+            "month": "October",
+            "username": "rishika"
+        },
+        {
+            "title": "Leakage Issue",
+            "description": "Leakage Issue reported in the area.",
+            "pincode": "500081",
+            "location": {
+                "lat": "17.450401",
+                "lng": "78.380571"
+            },
+            "category": "Water / Leakage",
+            "priority": "Medium",
+            "photo": "static/uploads/leakage_issue112.jpeg",
+            "anonymous": false,
+            "upvotes": 13,
+            "date": "2023-12-15",
+            "time": "07:52:49",
+            "month": "December",
+            "username": "rishika"
+        },
+        {
+            "title": "Overflow Issue",
+            "description": "Overflow Issue reported in the area.",
+            "pincode": "500072",
+            "location": {
+                "lat": "17.484348",
+                "lng": "78.400132"
+            },
+            "category": "Garbage / Overflow",
+            "priority": "Low",
+            "photo": "static/uploads/overflow_issue115.jpeg",
+            "anonymous": false,
+            "upvotes": 16,
+            "date": "2025-03-05",
+            "time": "14:22:27",
+            "month": "March",
+            "username": "rishika"
+        },
+        {
+            "title": "Broken Issue",
+            "description": "Broken Issue reported in the area.",
+            "pincode": "500045",
+            "location": {
+                "lat": "17.440081",
+                "lng": "78.348915"
+            },
+            "category": "Streetlight / Broken",
+            "priority": "Low",
+            "photo": "static/uploads/broken_issue116.jpeg",
+            "anonymous": false,
+            "upvotes": 43,
+            "date": "2025-05-06",
+            "time": "04:25:07",
+            "month": "May",
+            "username": "rishika"
+        },
+        {
+            "title": "Congestion Issue",
+            "description": "Congestion Issue reported in the area.",
+            "pincode": "500085",
+            "location": {
+                "lat": "17.312924",
+                "lng": "78.394186"
+            },
+            "category": "Traffic / Congestion",
+            "priority": "Medium",
+            "photo": "static/uploads/congestion_issue120.jpeg",
+            "anonymous": false,
+            "upvotes": 25,
+            "date": "2025-05-04",
+            "time": "22:57:10",
+            "month": "May",
+            "username": "rishika"
+        },
+        {
+            "title": "Blockage Issue",
+            "description": "Blockage Issue reported in the area.",
+            "pincode": "500081",
+            "location": {
+                "lat": "17.450401",
+                "lng": "78.380571"
+            },
+            "category": "Drainage / Blockage",
+            "priority": "High",
+            "photo": "static/uploads/blockage_issue121.jpeg",
+            "anonymous": false,
+            "upvotes": 12,
+            "date": "2024-03-19",
+            "time": "05:19:34",
+            "month": "March",
+            "username": "rishika"
+        },
+        {
+            "title": "Broken Issue",
+            "description": "Broken Issue reported in the area.",
+            "pincode": "500045",
+            "location": {
+                "lat": "17.440081",
+                "lng": "78.348915"
+            },
+            "category": "Streetlight / Broken",
+            "priority": "Low",
+            "photo": "static/uploads/broken_issue122.jpeg",
+            "anonymous": false,
+            "upvotes": 15,
+            "date": "2024-01-19",
+            "time": "23:22:17",
+            "month": "January",
+            "username": "rishika"
+        },
+        {
+            "title": "Park Issue",
+            "description": "Park Issue reported in the area.",
+            "pincode": "500072",
+            "location": {
+                "lat": "17.484348",
+                "lng": "78.400132"
+            },
+            "category": "Public Facility / Park",
+            "priority": "Low",
+            "photo": "static/uploads/park_issue124.jpeg",
+            "anonymous": false,
+            "upvotes": 6,
+            "date": "2023-09-13",
+            "time": "03:34:47",
+            "month": "September",
+            "username": "rishika"
+        },
+        {
+            "title": "Leakage Issue",
+            "description": "Leakage Issue reported in the area.",
+            "pincode": "500003",
+            "location": {
+                "lat": "17.435353",
+                "lng": "78.471872"
+            },
+            "category": "Water / Leakage",
+            "priority": "Medium",
+            "photo": "static/uploads/leakage_issue127.jpeg",
+            "anonymous": false,
+            "upvotes": 29,
+            "date": "2025-01-22",
+            "time": "02:24:55",
+            "month": "January",
+            "username": "rishika"
+        },
+        {
+            "title": "Broken Issue",
+            "description": "Broken Issue reported in the area.",
+            "pincode": "500081",
+            "location": {
+                "lat": "17.450401",
+                "lng": "78.380571"
+            },
+            "category": "Streetlight / Broken",
+            "priority": "Low",
+            "photo": "static/uploads/broken_issue132.jpeg",
+            "anonymous": false,
+            "upvotes": 14,
+            "date": "2025-08-09",
+            "time": "08:22:59",
+            "month": "August",
+            "username": "rishika"
+        }
+    ]
+}
