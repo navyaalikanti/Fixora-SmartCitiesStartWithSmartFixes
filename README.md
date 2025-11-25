@@ -38,7 +38,7 @@ Government officials can track, assign, and manage these issues using a centrali
 - Leaflet.js (Maps & Location)
 
 ### Backend
-- Python (Flask / Django)
+- Python 
 
 ### Database
 - JSON Files (Lightweight data storage for prototype)
