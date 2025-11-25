@@ -1,0 +1,73 @@
+# Civic Issue Management Platform
+
+A web-based platform that connects citizens with government authorities for fast, transparent, and organized civic issue resolution.  
+Citizens can report issues like potholes, garbage accumulation, water leakage, and streetlight faults through an easy-to-use portal.  
+Government officials can track, assign, and manage these issues using a centralized dashboard.
+
+---
+
+## Features
+
+###  Citizen Portal
+- Report civic issues with **photo/video upload**
+- Location tagging done using **Leaflet maps**
+- Option for **manual location entry**
+- Categorize issues (Road, Water, Waste, Electricity, etc.)
+- Real-time status tracking:  
+  *Submitted → Assigned → In Progress → Resolved*
+
+---
+
+###  Government Dashboard
+- Centralized dashboard for all civic complaints
+- List view of all issues
+- **Heatmap visualization** of issues using Leaflet
+- Assign tasks to field/municipal staff
+- Track issue progress and verify resolution using images
+- Citizen confirmation before closure
+
+---
+
+
+## Tech Stack
+
+### Frontend
+- HTML  
+- CSS  
+- JavaScript  
+- Leaflet.js (Maps & Location)
+
+### Backend
+- Python (Flask / Django)
+
+### Database
+- JSON Files (Lightweight data storage for prototype)
+
+### Mapping
+- Leaflet.js for map view, markers, and heatmaps
+
+---
+
+##  Key Highlights
+
+- Issue location captured using **Leaflet**
+- Citizens can submit detailed reports easily
+- Government dashboard shows issues with map markers/heatmap
+- End-to-end transparency between citizens and officials
+- Simple JSON-based storage for fast prototyping
+
+---
+
+## Future Enhancements
+
+- AI-based issue prediction model 
+- Multi-language support
+- SMS/Email alerts for status updates
+- Admin-level analytics dashboard
+- Mobile app version (Android/iOS)
+- More secure database (PostgreSQL / MongoDB)
+
+---
+
+
+
