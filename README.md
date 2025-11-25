@@ -47,7 +47,15 @@ Government officials can track, assign, and manage these issues using a centrali
 - Leaflet.js for map view, markers, and heatmaps
 
 ---
+## How to Run
 
+1. Open terminal or command prompt  
+2. Go to your project folder
+3. Run the Python file:
+```
+python app.py
+```
+4.It gives a link to open project in Browser.Open it.
 ##  Key Highlights
 
 - Issue location captured using **Leaflet**
