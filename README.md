@@ -78,7 +78,7 @@ python app.py
 ---
 ## Demo Video
 
-▶ Watch the demo here: https://www.youtube.com/watch?v=5diorI8Wfow
+ Watch the demo here: https://www.youtube.com/watch?v=5diorI8Wfow
 
 
 
