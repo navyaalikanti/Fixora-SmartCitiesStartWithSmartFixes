@@ -76,6 +76,9 @@ python app.py
 - More secure database (PostgreSQL / MongoDB)
 
 ---
+## Demo Video
+
+▶ Watch the demo here: https://www.youtube.com/watch?v=5diorI8Wfow
 
 
 
